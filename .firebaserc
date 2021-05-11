@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "web-personal-9dc40": {
+      "hosting": {
+        "webpersonal": [
+          "web-personal-9dc40"
+        ]
+      }
+    }
+  }
+}
