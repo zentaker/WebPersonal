@@ -3,7 +3,8 @@ export class UsuarioModel {
     password: string;
     nombre: string;
     servicio: string;
-    telefono: string
+    telefono: string;
+    coment: string;
     id: string;
     
 }

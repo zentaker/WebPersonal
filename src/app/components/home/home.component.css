@@ -383,4 +383,15 @@ body{
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
+  .blog-footer .social-icons {
+      display: flex;
+      list-style: none;
+      align-items: center;
+  }
+  .blog-footer .social-icons li {
+      align-items: center;
+      margin-right: 18px;
+      font-size: 2em;
+      
+  }
   

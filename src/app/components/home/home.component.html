@@ -1,7 +1,7 @@
 
   <body>
     
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container-fluid">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,12 +35,12 @@
     </div>
   </div>
 </nav>
-
+-->
 
   <div class="banner text-center p-5 rounded ">
     <h1>Hola <br> Soy Alejandro Palomino</h1>
     <p class="lead">Diseñador  -  Desarollador  -  Fotógrafo</p>
-    <a class="btn btn-lg btn-light mt-2"  [routerLink]="['/registro']" role="button">Contactame</a>
+    <a class="btn btn-lg btn-light mt-2" href="#contactame">Contactame</a>
   </div>
 
   
@@ -104,7 +104,7 @@
       
                               <!-- start experience section-->
                               <div class="timeline ">
-                                  <div class="icon"></div>
+                                  <div style="top:-50px" class="icon"></div>
                                   <div class="date-content">
                                       <div class="date-outer">
                                           <span class="date">
@@ -122,17 +122,20 @@
                                         <p>Proyectos:</p>
                                      
                                         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aqara">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" style=" margin-top: 10px;" data-bs-target="#aqara">
   Aqara
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#miel">
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#miel">
   Miel
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#night">
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#night">
   Nights
 </button>
 
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#agave">
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#agave">
   Agave
 </button>
 
@@ -141,11 +144,14 @@
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Aqara</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Aqara - Revista cocktail.pe</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Fotografias de aqara agave de los andes para la revista coqtail</p>
+        <h5>La Seccion</h5>
+        <p>Fotos elaboradas para aqara agabe de los andes, la cual fueron tomadas en caraz en el cual es donde se encuentra la
+          planta destiladora asi como tambien foto de productos </p>
+        <hr>
         
           <div class="row" >
             <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
@@ -177,7 +183,20 @@
            
            
           </div>
-        
+          <h5 class="mt-5">La Revista</h5>
+          
+          <p>Las fotografias fueron publicadas en la reviista fisica para la edicion de junio y julio del 2019 de las
+            cuales las fotos que se utilizaron fueron parte de la seccion que realize para aqara asi como tambien una version web
+            en la cual tambien se utilizaron fotos de la seccion realizada</p>
+          <hr>
+          <div class="row ">
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+              <img src="../../../assets/revista2.jpg" class="img-fluid rounded">
+            </a>
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+              <img src="../../../assets/revista1.jpg" class="img-fluid rounded">
+            </a>
+          </div>
       </div>
 
     </div>
@@ -191,6 +210,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <p>Fotografias realizadas para una campaña en redes sociales en conjunto, para promocionar los porudctos artesnales de
+          la miel de agabe y vegolatte, en un ambiente artesanal que refleja sus origenes peruanos.</p>
         
           <div class="row" >
             <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col">
@@ -247,9 +268,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>  Las noches en caraz, Peru son unicas, en el cual puedes pasarte y tomar un drink a los pies de la cordillera de los andes.
-
-          Corto realizado para fomentar las noches de la Open Bar de la casona lara en el cual tiene como bebida bandera el agave de los andes</p>
+        <p> Un corto realizado para aqara en uno de sus primeros lanzamientos en la cual se busco trasmitir lo agreste que es la
+          ruta del agave, con unas tomas al callejon de huaylas origen del licor de agave</p>
 
       
         <br>
@@ -276,7 +296,7 @@
       
                               <!-- start experience section-->
                               <div class="timeline">
-                                  <div class="icon"></div>
+                                  <div style="top:10px" class="icon"></div>
                                   <div class="date-content">
                                       <div class="date-outer">
                                           <span class="date" >
@@ -291,10 +311,10 @@
                                         <h5 class="card-title">Ingenieria Industrial</h5>
                                         <h6 class="card-subtitle mb-2 text-muted">USIL</h6>
                                         <p class="card-text">Trabaje con la empresa VWise del peru para realizar distintos proyectos de implementacion de RFID en empresas del sector logistica</p>
-                                        <p>Proyectos:</p>
+                                        <p></p>
                                      
                                         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aqara">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aqara">
   Aqara
 </button>
 <button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#miel">
@@ -308,7 +328,7 @@
 </button>
 <button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#agave">
   Agave
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="aqara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -474,7 +494,7 @@
       
                               <!-- start experience section-->
                               <div class="timeline">
-                                  <div class="icon"></div>
+                                  <div style="top:-100px" class="icon"></div>
                                   <div class="date-content">
                                       <div class="date-outer">
                                           <span class="date">
@@ -492,20 +512,24 @@
                                         <p>Proyectos:</p>
                                      
                                         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aqara1">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" style="margin-top: 10px;" data-bs-target="#aqara1">
   Redes Sociales
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#inlog">
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#inlog">
   Story Telling
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#night">
-  Nights
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#Pakagin">
+  Pakagin
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#faro">
-  faro
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#ui">
+  UI
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#agave">
-  Agave
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#man">
+  Brand
 </button>
 
 <!-- Modal -->
@@ -540,7 +564,7 @@
       <div class="modal-body">
         
           <div class="row" >
-          <img src="../../../assets/inlog.png" alt="">
+          <img style="height: min-intrinsic;" src="../../../assets/inlog.png" alt="">
       
           </div>
   
@@ -551,23 +575,20 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="night" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Pakagin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Aqara nights</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Aputiksi - Pakagin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>  Las noches en caraz, Peru son unicas, en el cual puedes pasarte y tomar un drink a los pies de la cordillera de los andes.
-
-          Corto realizado para fomentar las noches de la Open Bar de la casona lara en el cual tiene como bebida bandera el agave de los andes</p>
-
+      
       
         <br>
         
-          <div class="row" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/d6wMgWJyjN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <img style="height: min-intrinsic;" src="../../../assets/aputiksi.png" alt="">
       
           </div>
 
@@ -578,23 +599,21 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="faro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ui" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">El faro</h5>
+        <h5 class="modal-title" id="exampleModalLabel">CoverUp broker digital UI</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>  Las noches en caraz, Peru son unicas, en el cual puedes pasarte y tomar un drink a los pies de la cordillera de los andes.
-
-          Corto realizado para fomentar las noches de la Open Bar de la casona lara en el cual tiene como bebida bandera el agave de los andes</p>
+        
 
       
         <br>
         
-          <div class="row" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lF_by5GxMCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <img style="height: min-intrinsic;" src="../../../assets/cover.png" alt="">
       
           </div>
 
@@ -605,23 +624,20 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="agave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="man" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">La ruta del agave</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Narihualá brand </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>  Las noches en caraz, Peru son unicas, en el cual puedes pasarte y tomar un drink a los pies de la cordillera de los andes.
-
-          Corto realizado para fomentar las noches de la Open Bar de la casona lara en el cual tiene como bebida bandera el agave de los andes</p>
-
-      
+        
         <br>
         
-          <div class="row" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sQg9zhxCpaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <img style="height: min-intrinsic;" src="../../../assets/mancora.png" alt="">
+          <img style="height: min-intrinsic;" src="../../../assets/mancora2.png" alt="">
       
           </div>
 
@@ -640,7 +656,7 @@
       
                               <!-- start experience section-->
                               <div class="timeline">
-                                  <div class="icon"></div>
+                                  <div style="top:-80px" class="icon"></div>
                                   <div class="date-content">
                                       <div class="date-outer">
                                           <span class="date">
@@ -658,89 +674,84 @@
                                         <p>Proyectos:</p>
                                      
                                         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aqara">
-  Aqara
+<button type="button" class="btn btn-primary" style="margin-top: 10px;" data-bs-toggle="modal" data-bs-target="#snake">
+  SnakeJS
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#miel">
-  Miel
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#scra">
+  WebScraping
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#night">
-  Nights
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#ani">
+  AnimatedWeb
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#faro">
-  faro
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#api">
+  WebAPI
 </button>
-<button type="button" class="btn btn-primary" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#agave">
-  Agave
+<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 10px;" data-bs-toggle="modal"
+  data-bs-target="#react">
+  ReactAPP
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="aqara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="snake" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Aqara</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Snake Game JavaScript</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Fotografias de aqara agave de los andes para la revista coqtail</p>
+        <p style="text-align: left;">Desarollo del famoso videojuego snake en html con la logica desarollada en javascrip, el
+          cual opera mediante
+          funciones elaboradas en javascript puro. Es una concatenacion de elementos en el cual a medida que va consumiendo la
+          comida estos elemenos se van concatenando.</p>
         
           <div class="row" >
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="../../../assets/aqara/a1.jpeg" class="img-fluid rounded">
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+              <img style="    width: -webkit-fill-available;" src="../../../assets/snakeinfo.png" class="img-fluid rounded">
             </a>
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="../../../assets/aqara/a2.jpeg" class="img-fluid rounded">
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+              <img src="../../../assets/snake.png" class="img-fluid rounded">
             </a>
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="../../../assets/aqara/a3.jpeg" class="img-fluid rounded">
-            </a>
-          </div>
-          <div class="row " >
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="../../../assets/aqara/a5.jpeg" class="img-fluid rounded">
-            </a>
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="../../../assets/aqara/a6.jpeg" class="img-fluid rounded">
-            </a>
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="../../../assets/aqara/a7.jpeg" class="img-fluid rounded">
-            </a>
-          </div>
-          <div class="row " >
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="../../../assets/aqara/a8.jpeg" class="img-fluid rounded">
-            </a>
-     
-           
-           
-          </div>
-        
-      </div>
-
-    </div>
-  </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a class="btn btn-success" type="button" target="_blank" href="http://zencloud.space/proyectos_html/snake">Lunch
+                Game</a>
+            </div>
 </div>
-<div class="modal fade" id="miel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+</div>
+
+</div>
+  </div>
+  </div>
+<div class="modal fade" id="scra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">miel</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Web Scraping</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         
+        <p style="text-align: left;">Desarollo de un sistema que escucha la informacion de una web y al momento que este valor
+          cambia la almacena y la
+          guarda en una bace de datos en sql. Para este caso se uso informacion de la bolsa de alicorp en el cual va
+          actualizando su valor durante el dia. <br> <br> La programacion es en Javascript puro se uso la libreria de puppteer
+          para la escucha y catura de la informacion y NodeJs para la distribucion de paquetes.</p>
           <div class="row" >
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col">
-              <img src="../../../assets/miel/miel1.jpg" class="img-fluid rounded">
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+              <img style="    width: -webkit-fill-available;" src="../../../assets/webscraping.png" class="img-fluid rounded">
             </a>
-      
-          </div>
-          <div class="row " >
-            <a href="#"  onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col">
-              <img src="../../../assets/miel/miel2.jpg" class="img-fluid rounded">
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+              <img src="../../../assets/bdwebsraping.png" class="img-fluid rounded">
+            
             </a>
-  
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a class="btn btn-success" type="button" target="_blank" href="https://github.com/zentaker/WebscrapingBVL">Ver
+                Codigo</a>
+            </div>
+
           </div>
     
         
@@ -749,24 +760,71 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="night" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ani" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Aqara nights</h5>
+        <h5 class="modal-title" id="exampleModalLabel">AnimatedWeb</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>  Las noches en caraz, Peru son unicas, en el cual puedes pasarte y tomar un drink a los pies de la cordillera de los andes.
+        <p style="text-align: left;">Desarollo de webs animadas con distintas librerias que permiten un interfas muy amigable
+          para los usuarios. Se utilizao la libreria de Gsap para realizar las animaciones de la web</p>
+        <div class="row">
 
-          Corto realizado para fomentar las noches de la Open Bar de la casona lara en el cual tiene como bebida bandera el agave de los andes</p>
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+              <img style="    width: -webkit-fill-available;" src="../../../assets/gsap.png" class="img-fluid rounded">
+            </a>
+
+          </div>
+        
+          <div class="row" >
+            <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col">
+              <img style="    width: -webkit-fill-available;" src="../../../assets/animacion.png" class="img-fluid rounded">
+            </a>
+            
+            </div>
+            <div class="row">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="btn btn-success" type="button" target="_blank"
+                  href="http://zencloud.space/proyectos_html/Music-Website-Theme-master-2">Lunch
+                  Web</a>
+              </div>
+            </div>
+
+    
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="api" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Web Peliculas - TMDB</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p style="text-align: left;"> Single Page aplication desarollada en angular mediante typescript la cual puedes
+          visualizar las ultimas peliculas asi como tambien busca, la app es alimentada por un api de peliculas de The Movie DB
+        </p>
 
       
         <br>
         
-          <div class="row" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/d6wMgWJyjN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
+        <div class="row">
+          <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+            <img style="    width: -webkit-fill-available;" src="../../../assets/paginamovie.png" class="img-fluid rounded">
+          </a>
+          <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+            <img src="../../../assets/moviedbapi.png" class="img-fluid rounded">
+          </a>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-success" type="button" target="_blank" href="#">Lunch
+              web</a>
+          </div>
           </div>
 
     
@@ -776,56 +834,37 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="faro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="react" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">El faro</h5>
+        <h5 class="modal-title" id="exampleModalLabel">ReactAPP</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>  Las noches en caraz, Peru son unicas, en el cual puedes pasarte y tomar un drink a los pies de la cordillera de los andes.
+        <p style="text-align: left;">Desarollo de una app para poder gestionar tus seguros y poder saber cuando estan por
+          vencer. Esta desarollado mediante react app de manera hibrida para ios y android. <br> <br> La informacion es
+          almacenada en la nube de firebase la cual es consumida on demand asi como tambien de la gestion de usuarios</p>
+        <div class="row">
+          <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+            <img style="    width: -webkit-fill-available;" src="../../../assets/pru1.png" class="img-fluid rounded">
+          </a>
+          <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+            <img src="../../../assets/pru2.png" class="img-fluid rounded">
+          </a>
+        </div>
 
-          Corto realizado para fomentar las noches de la Open Bar de la casona lara en el cual tiene como bebida bandera el agave de los andes</p>
-
-      
-        <br>
-        
-          <div class="row" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lF_by5GxMCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-          </div>
-
-    
-        
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="agave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">La ruta del agave</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>  Las noches en caraz, Peru son unicas, en el cual puedes pasarte y tomar un drink a los pies de la cordillera de los andes.
-
-          Corto realizado para fomentar las noches de la Open Bar de la casona lara en el cual tiene como bebida bandera el agave de los andes</p>
-
-      
-        <br>
-        
-          <div class="row" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sQg9zhxCpaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-          </div>
-
-    
-        
-      </div>
+            <div class="row">
+              <a href="#" onclick="return false" data-toggle="lightbox" data-gallery="gallery" class="col">
+                <img src="../../../assets/firebase prudenza.png" class="img-fluid rounded">
+              </a>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a class="btn btn-success" type="button" target="_blank"
+                href="https://github.com/zentaker/OrganizacionPolizas-APP">View
+                Code</a>
+            </div>
+            </div>
 
     </div>
   </div>
@@ -943,26 +982,26 @@
   </div>
 
   
-  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+  <div id="contactame" name="contactame" class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
         <h1 class="display-4 fw-bold lh-1 mb-3">Contactame</h1>
         <p class="col-lg-10 fs-4">Encantado de poder conversar y descubrir soluciones. </p>
         <div class="card col-lg-10 mb-2">
           <div class="card-body">
-             apalomino12@icloud.com
+            alejandro@climblabs.io
           </div>
         </div>
         <div class="card col-lg-10">
           <div class="card-body">
-             (511) 99832-5243
+            (511) 943 853 382
           </div>
         </div>
         
         
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
- 
+
         <form class="p-4 p-md-5 border rounded-3 bg-light" (ngSubmit)="onSubmit( f )" #f="ngForm">
 
   
@@ -972,18 +1011,12 @@
             </div>
             <br>
             <div class="form-floating">
-              <select name="servicio"   [(ngModel)]="usuario.servicio"  class="form-select" aria-label="Default select example">
-                  <option class="dropdown-item" disabled selected value="undefined">Estoy interesado...</option>
-                  <option value="desarollo">Desarollo</option>
-                  <option value="diseño">Diseño</option>
-                  <option value="fotografia">Fotografia/audiovisual</option>
-                  <option value="fotografia">Mundo Digital</option>
-                </select>
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="telefono"
+                [(ngModel)]="usuario.telefono">
+              <label for="floatingInput">Telefono</label>
             </div>
             <br>
-  
 
-      
           <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email"  required email
             [(ngModel)]="usuario.email">
@@ -991,16 +1024,15 @@
           </div>
           <br>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword"  name="password"  [(ngModel)]="usuario.password" placeholder="Password" >
-            <label for="floatingPassword">Password</label>
+            <textarea class="form-control" [(ngModel)]="usuario.coment" placeholder="Leave a comment here" name="coment"
+              id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
           </div>
       
           <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Recuerdame
-            </label>
+
           </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarme</button>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
        
         </form>
       </div>
@@ -1008,7 +1040,16 @@
   </div>
 
   <footer class="blog-footer">
-    <p>Web page build <a href="#">Alejandro Palomino</a> by <a href="climblabs.io">ClimbLabs</a>.</p>
+  <div class="footer-social-icons">
+    <h4 class="">Sigueme En</h4>
+    <ul class="social-icons justify-content-center">
+      <li><a href="https://www.instagram.com/cspacedesigns/" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.behance.net/alejandpalomin3" class="social-icon"><i class="fab fa-behance"></i></a></li>
+      <li><a href="https://github.com/zentaker" class="social-icon"><i class="fab fa-github"></i></a></li>
+  
+    </ul>
+  </div>
+  <p>Web page build For <a href="#">Alejandro Palomino</a> by <a href="http://climblabs.io">ClimbLabs</a>.</p>
     <p>
       <a href="#">Back to top</a>
     </p>

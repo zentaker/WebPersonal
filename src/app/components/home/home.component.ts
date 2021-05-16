@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsuarioModel } from 'src/app/models/usuario.model';
 import { AuthService } from 'src/app/services/auth.service';
+
 import Swal from 'sweetalert2';
 
 @Component({
@@ -23,7 +24,22 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
       this.usuario = new UsuarioModel();
     }
-    onSubmit(form: NgForm) {
+  onSubmit(form: NgForm) {
+      
+    console.log(form.form)
+    this.auth.sendMail(form.form.value)
+    Swal.fire({
+      icon: 'success',
+      title: 'Mensaje enviado',
+      text: 'Me contectare contigo en la brevedad',
+
+    
+      
+    });
+  }
+  
+    
+/*     onSubmit(form: NgForm) {
       Swal.fire({
         allowOutsideClick: false,
         icon: 'info',
@@ -60,5 +76,5 @@ export class HomeComponent implements OnInit {
         });
   
       });
-    }
+    } */
 }

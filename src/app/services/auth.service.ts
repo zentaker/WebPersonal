@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { UsuarioModel } from '../models/usuario.model';
 import { map, delay } from 'rxjs/operators'
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -44,12 +45,43 @@ export class AuthService {
     ) */
 
   }
+
+ public sendMail(usuario: UsuarioModel){
+
+      const user = {
+      email: usuario.email,
+      nombre: usuario.nombre,
+      servicio: usuario.servicio,
+      telefono: usuario.telefono,
+      coment: usuario.coment
+    
+       
+    }
+    console.log("send");
+    const headers = new Headers({
+        'Content-Type' : 'application/json'
+    });
+
+   return this.http.post("https://formspree.io/f/xleajloo", 
+        {
+            name: user.nombre,
+            _replyto: user.email,
+            message: user.coment,
+            telefone: user.telefono
+        }
+    
+    ).subscribe(res => console.log(res));
+  } 
+  
+
+
   nuevocliente(usuario: UsuarioModel) {
     const user = {
       email: usuario.email,
       nombre: usuario.nombre,
       servicio: usuario.servicio,
-      telefono: usuario.telefono
+      telefono: usuario.telefono,
+      coment: usuario.coment
     
        
     }
